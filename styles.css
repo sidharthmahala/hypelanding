@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background: #877dfd;
+    color: #333;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .hero{
+    min-height: 60vh;
+  }
+  
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    border-radius: 8px;
+  }
+  
+  .logo {
+    width: 150px;
+  }
+  
+  .headline h1 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+  
+  .headline p {
+    font-size: 1.5rem;
+    color: #1f1e1e;
+  }
+  
+  .cups-showcase {
+    margin: 50px 0;
+    animation: slideUp 1.2s ease;
+  }
+  
+  .cups-showcase h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .cup-gallery {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .cup {
+    width: 30%;
+    padding: 10px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cup img {
+    width: 100%;
+    border-radius: 8px;
+    transition: transform 0.4s;
+  }
+  
+  .cup p {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  .cup:hover img {
+    transform: scale(1.05);
+  }
+  
+  .lead-form {
+    background: #fff;
+    padding: 40px;
+    margin: 50px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1.2s ease;
+  }
+  
+  .lead-form h2 {
+    margin-bottom: 20px;
+    color: #ff6f61;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  form input, form textarea {
+    width: 80%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 6px;
+    border: 2px solid #ff6f61;
+    transition: border-color 0.3s;
+  }
+  
+  form input:focus, form textarea:focus {
+    border-color: #ffdd57;
+  }
+  
+  button {
+    padding: 12px 30px;
+    background: #ff6f61;
+    color: #252525;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  button:hover {
+    background: #ffdd57;
+  }
+  
+  #successMessage {
+    margin-top: 20px;
+    color: #28a745;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideUp {
+    0% {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
